@@ -1,0 +1,1283 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Frequent Losers as Cover Bidders in Public Procurement — Genicolo-Martins &amp; Furquim de Azevedo (Insper)">
+      
+      
+        <meta name="author" content="Darcio Genicolo-Martins &amp; Paulo Furquim de Azevedo">
+      
+      
+        <link rel="canonical" href="https://darciogm.github.io/papers/frequent-losers/robustness/">
+      
+      
+        <link rel="prev" href="../results/">
+      
+      
+        <link rel="next" href="../extensions/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Robustness - Frequent Losers as Cover Bidders</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../assets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#robustness" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Frequent Losers as Cover Bidders" class="md-header__button md-logo" aria-label="Frequent Losers as Cover Bidders" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Frequent Losers as Cover Bidders
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Robustness
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="red" aria-label="Alternar para modo escuro" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="red" aria-label="Alternar para modo claro" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../autores/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Autores
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../paper/" class="md-tabs__link">
+          
+  
+  
+  Paper
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../results/" class="md-tabs__link">
+          
+  
+  
+  Results
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../replication/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Replication
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Frequent Losers as Cover Bidders" class="md-nav__button md-logo" aria-label="Frequent Losers as Cover Bidders" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"></path></svg>
+
+    </a>
+    Frequent Losers as Cover Bidders
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paper
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Paper
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manuscript
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mindmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mind Map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Results
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Results
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../results/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Main Results
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Robustness
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Robustness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-fl-definition-robustness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. FL Definition Robustness
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. FL Definition Robustness">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iqr-threshold-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IQR Threshold Sensitivity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#low-win-rate-variants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Low-Win-Rate Variants
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-fitting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-Fitting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temporal-fl-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temporal FL Definition
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-sample-and-specification-robustness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Sample and Specification Robustness
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Sample and Specification Robustness">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tighter-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tighter Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#homogeneous-sub-samples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Homogeneous Sub-Samples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-sensitivity-to-unobservables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Sensitivity to Unobservables
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-staggered-difference-in-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Staggered Difference-in-Differences
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-welfare-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Welfare Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-oversight-heterogeneity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Oversight Heterogeneity
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extensions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extensions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../replication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Replication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="robustness">Robustness<a class="headerlink" href="#robustness" title="Permanent link">¶</a></h1>
+<p>This page summarizes the six groups of robustness checks and extensions reported in the paper.</p>
+<hr>
+<h2 id="1-fl-definition-robustness">1. FL Definition Robustness<a class="headerlink" href="#1-fl-definition-robustness" title="Permanent link">¶</a></h2>
+<h3 id="iqr-threshold-sensitivity">IQR Threshold Sensitivity<a class="headerlink" href="#iqr-threshold-sensitivity" title="Permanent link">¶</a></h3>
+<p>The IQR multiplier is varied from 1.0 to 3.0. The price coefficient increases monotonically with the multiplier---stricter thresholds select more extreme cover bidders.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Multiplier</th>
+<th style="text-align: center;">FL Firms</th>
+<th style="text-align: center;">Coefficient</th>
+<th style="text-align: center;">SE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1.0x</td>
+<td style="text-align: center;">3,442</td>
+<td style="text-align: center;">0.049**</td>
+<td style="text-align: center;">(0.020)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>1.5x (baseline)</strong></td>
+<td style="text-align: center;"><strong>2,735</strong></td>
+<td style="text-align: center;"><strong>0.064</strong>*</td>
+<td style="text-align: center;"><strong>(0.022)</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2.0x</td>
+<td style="text-align: center;">2,164</td>
+<td style="text-align: center;">0.076***</td>
+<td style="text-align: center;">(0.024)</td>
+</tr>
+<tr>
+<td style="text-align: center;">3.0x</td>
+<td style="text-align: center;">1,456</td>
+<td style="text-align: center;">0.089***</td>
+<td style="text-align: center;">(0.028)</td>
+</tr>
+</tbody>
+</table>
+<figure>
+  <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/figures/fig_07_threshold_stability.png" data-desc-position="bottom"><img src="../assets/figures/fig_07_threshold_stability.png" alt="Threshold stability"></a>
+  <figcaption><strong>Figure 7.</strong> FL price coefficient across IQR multiplier thresholds. Error bars show 95% confidence intervals.</figcaption>
+</figure>
+
+<h3 id="low-win-rate-variants">Low-Win-Rate Variants<a class="headerlink" href="#low-win-rate-variants" title="Permanent link">¶</a></h3>
+<p>Relaxing the zero-win-rate requirement to &lt; 1% and &lt; 2% produces stable coefficients.</p>
+<h3 id="cross-fitting">Cross-Fitting<a class="headerlink" href="#cross-fitting" title="Permanent link">¶</a></h3>
+<p>FL firms defined using odd years, regressions estimated on even years (and vice versa). The cross-fold average (0.036) is attenuated relative to the full-sample OLS (0.064) but remains positive.</p>
+<h3 id="temporal-fl-definition">Temporal FL Definition<a class="headerlink" href="#temporal-fl-definition" title="Permanent link">¶</a></h3>
+<p>Rolling 3-year windows yield a coefficient of 0.070 (<span class="arithmatex">\(p &lt; 0.01\)</span>), close to the baseline 0.064.</p>
+<hr>
+<h2 id="2-sample-and-specification-robustness">2. Sample and Specification Robustness<a class="headerlink" href="#2-sample-and-specification-robustness" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Check</th>
+<th style="text-align: center;">Coefficient</th>
+<th style="text-align: center;"><span class="arithmatex">\(N\)</span></th>
+<th style="text-align: left;">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Unrestricted sample</td>
+<td style="text-align: center;">0.063</td>
+<td style="text-align: center;">2,875,653</td>
+<td style="text-align: left;">Removing item-type restriction</td>
+</tr>
+<tr>
+<td style="text-align: left;">CEM matching</td>
+<td style="text-align: center;">0.077</td>
+<td style="text-align: center;">969,751</td>
+<td style="text-align: left;">Coarsened exact matching</td>
+</tr>
+<tr>
+<td style="text-align: left;">IPW matching</td>
+<td style="text-align: center;">0.055</td>
+<td style="text-align: center;">830,194</td>
+<td style="text-align: left;">Inverse probability weighting</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cluster: item (baseline)</td>
+<td style="text-align: center;">SE = 0.022</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Cluster: PBU</td>
+<td style="text-align: center;">SE = 0.014</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Cluster: item + PBU</td>
+<td style="text-align: center;">SE = 0.024</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Significant at 1% under all schemes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tighter-controls">Tighter Controls<a class="headerlink" href="#tighter-controls" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Column</th>
+<th style="text-align: left;">Added Controls</th>
+<th style="text-align: center;">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">(1)</td>
+<td style="text-align: left;">Baseline (item + year + PBU FE)</td>
+<td style="text-align: center;">0.064***</td>
+</tr>
+<tr>
+<td style="text-align: center;">(2)</td>
+<td style="text-align: left;">+ number of genuine bidders</td>
+<td style="text-align: center;">0.094***</td>
+</tr>
+<tr>
+<td style="text-align: center;">(3)</td>
+<td style="text-align: left;">+ log reference price</td>
+<td style="text-align: center;">-0.031</td>
+</tr>
+<tr>
+<td style="text-align: center;">(4)</td>
+<td style="text-align: left;">Item x year FE</td>
+<td style="text-align: center;">0.074***</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Bad control: reference price</p>
+<p>Column (3) conditions on reference price, which may itself be inflated by cover bidding. The sign reversal is consistent with a bad-control problem (collider bias), not a true robustness failure.</p>
+</div>
+<h3 id="homogeneous-sub-samples">Homogeneous Sub-Samples<a class="headerlink" href="#homogeneous-sub-samples" title="Permanent link">¶</a></h3>
+<p>Item groups are split at the median within-group price CV (proxy for product homogeneity). If the FL effect were driven by quality differences rather than cover bidding, it should vanish in low-CV (homogeneous) groups. Item fixed effects already absorb much cross-item heterogeneity, so the CV split provides an additional dimension of variation.</p>
+<hr>
+<h2 id="3-sensitivity-to-unobservables">3. Sensitivity to Unobservables<a class="headerlink" href="#3-sensitivity-to-unobservables" title="Permanent link">¶</a></h2>
+<figure>
+  <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/figures/fig_08_sensitivity_contour.png" data-desc-position="bottom"><img src="../assets/figures/fig_08_sensitivity_contour.png" alt="Sensitivity contour"></a>
+  <figcaption><strong>Figure 8.</strong> Sensitivity contour plot (Cinelli &amp; Hazlett, 2020). The robustness value RV = 17.5% means an unobserved confounder would need to explain at least 17.5% of the residual variation in both FL presence and log prices to reduce the coefficient to zero.</figcaption>
+</figure>
+
+<div class="admonition success">
+<p class="admonition-title">Robust to omitted variable bias</p>
+<p>The robustness value <span class="arithmatex">\(RV_{q=1} = 17.5\%\)</span> is a stringent requirement given the rich fixed effects structure (item + year + PBU).</p>
+</div>
+<hr>
+<h2 id="4-staggered-difference-in-differences">4. Staggered Difference-in-Differences<a class="headerlink" href="#4-staggered-difference-in-differences" title="Permanent link">¶</a></h2>
+<p>The staggered DiD is reported as a <strong>complementary exercise only</strong>. Using Callaway &amp; Sant'Anna (2021), the overall ATT is 0.014 (SE = 0.039)---positive but insignificant.</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Market-year observations</td>
+<td>144,168</td>
+</tr>
+<tr>
+<td>Treated markets</td>
+<td>1,511</td>
+</tr>
+<tr>
+<td>Never-treated markets</td>
+<td>18,266</td>
+</tr>
+<tr>
+<td>ATT (log prices)</td>
+<td>0.014 (SE = 0.039)</td>
+</tr>
+<tr>
+<td>MDE (5%, two-sided)</td>
+<td>0.076</td>
+</tr>
+<tr>
+<td>MDE (80% power)</td>
+<td>0.109</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Underpowered by design</p>
+<p>The MDE (0.076) exceeds the OLS estimate (0.064). The design is underpowered for detecting effects of this magnitude, and the paper does not rely on it for identification.</p>
+</div>
+<figure>
+  <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/figures/fig_06_event_study.png" data-desc-position="bottom"><img src="../assets/figures/fig_06_event_study.png" alt="Event study"></a>
+  <figcaption><strong>Figure 9.</strong> TWFE event study: coefficients on years relative to first FL entry, by outcome variable.</figcaption>
+</figure>
+
+<hr>
+<h2 id="5-welfare-analysis">5. Welfare Analysis<a class="headerlink" href="#5-welfare-analysis" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Bound</th>
+<th style="text-align: center;">Coefficient</th>
+<th style="text-align: center;">Welfare Loss</th>
+<th style="text-align: center;">% of Total Spending</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">OLS (lower bound)</td>
+<td style="text-align: center;">0.064</td>
+<td style="text-align: center;">R$ 734 million</td>
+<td style="text-align: center;">2.4%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cross-fit (intermediate)</td>
+<td style="text-align: center;">0.036</td>
+<td style="text-align: center;">R$ 406 million</td>
+<td style="text-align: center;">1.3%</td>
+</tr>
+<tr>
+<td style="text-align: left;">IV (upper bound)</td>
+<td style="text-align: center;">0.194</td>
+<td style="text-align: center;">R$ 2.4 billion</td>
+<td style="text-align: center;">7.8%</td>
+</tr>
+</tbody>
+</table>
+<p>Total BEC procurement spending: R$ 30.8 billion (2009--2019).</p>
+<figure>
+  <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/figures/fig_09_welfare_markup.png" data-desc-position="bottom"><img src="../assets/figures/fig_09_welfare_markup.png" alt="Welfare markup"></a>
+  <figcaption><strong>Figure 10.</strong> Implied markup from cover bidding: OLS (lower bound) and IV (upper bound). OECD benchmark range for cartel overcharges shown as dashed lines.</figcaption>
+</figure>
+
+<hr>
+<h2 id="6-oversight-heterogeneity">6. Oversight Heterogeneity<a class="headerlink" href="#6-oversight-heterogeneity" title="Permanent link">¶</a></h2>
+<p>The FL price coefficient varies by PBU size quartile:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">PBU Size Quartile</th>
+<th style="text-align: center;">Coefficient</th>
+<th style="text-align: center;">SE</th>
+<th style="text-align: center;">Significant?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Q1 (smallest)</td>
+<td style="text-align: center;">0.214</td>
+<td style="text-align: center;">(large)</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr>
+<td style="text-align: center;">Q2</td>
+<td style="text-align: center;">--</td>
+<td style="text-align: center;">--</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr>
+<td style="text-align: center;">Q3</td>
+<td style="text-align: center;"><strong>0.066</strong></td>
+<td style="text-align: center;">(0.029)</td>
+<td style="text-align: center;"><strong>Yes</strong> (<span class="arithmatex">\(p &lt; 0.05\)</span>)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Q4 (largest)</td>
+<td style="text-align: center;">0.017</td>
+<td style="text-align: center;">(0.015)</td>
+<td style="text-align: center;">No</td>
+</tr>
+</tbody>
+</table>
+<p>The pattern is broadly consistent with the prediction that detection probability constrains cover bidding: the effect is largest in the smallest PBUs (weakest oversight) and smallest in the largest PBUs (strongest oversight).</p>
+<figure>
+  <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/figures/fig_14_oversight_heterogeneity.png" data-desc-position="bottom"><img src="../assets/figures/fig_14_oversight_heterogeneity.png" alt="Oversight heterogeneity"></a>
+  <figcaption><strong>Figure 11.</strong> FL price coefficient by oversight proxy (PBU size quartile and procedure type).</figcaption>
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
